@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Society - Content Page</title>
+    <link rel="stylesheet" href="second-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+</head>
+<body data-scroll-container>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="nav-btn">Demon Slayer</a>
+            </div>
+            <div class="nav-center">
+                <button class="nav-btn" onclick="scrollToCharacters()">Characters</button>
+                <button class="nav-btn" onclick="scrollToArc()">Arcs</button>
+                <button class="nav-btn" onclick="window.open('https://demonslayerfree.online', '_blank')">Manga</button>
+                <button class="nav-btn" onclick="window.open('https://demonslayer-anime.com', '_blank')">Anime</button>
+                <button class="nav-btn" onclick="window.open('https://demonslayer-merchandise.shop', '_blank')">Merchandise</button>
+            </div>
+            <div class="nav-right">
+                <button class="profile" onclick="profile()">SlayerDex</button>
+            </div>
+        </nav>   
+    </header>
+
+    <main data-scroll-section>
+        <div class="section" id="overview-section" style="background-image: url('Overview.png');">
+            <h2>Overview</h2>
+            <p>Demon Slayer follows the journey of Tanjiro Kamado, a young boy who becomes a demon slayer after his family is slaughtered by demons. <br> His sister Nezuko is turned into a demon but retains her humanity. Together, they embark on a quest to find a cure for her and to eliminate demons.</p>
+        </div>
+
+        <div class="section" id="character-section" style="background-image: url('Characters.png');">
+            <h2>Characters</h2>
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="Tanjiro.png" alt="Tanjiro Kamado">
+                    <div class="character-text">
+                        <h3>Tanjiro Kamado</h3>
+                        <p>Main protagonist who joins the Demon Slayer Corps to save his sister.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="Nezuko.png" alt="Nezuko Kamado">
+                    <div class="character-text">
+                        <h3>Nezuko Kamado</h3>
+                        <p>Tanjiro's sister who was turned into a demon but retains her humanity.</p>
+                    </div>
+                </div>            
+                <div class="character-card">
+                    <img src="Zenitsu.png" alt="Zenitsu Agatsuma">
+                    <div class="character-text">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>A fellow demon slayer with a fearful personality but immense power.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="Inosuke.png" alt="Inosuke Hashibira">
+                    <div class="character-text">
+                        <h3>Inosuke Hashibira</h3>
+                        <p>A wild and skilled fighter who wields two swords.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section arc-section" id="section1" style="background-image: url('URA.png');">
+            <h2>Unwavering Resolve Arc</h2>
+            <p>This arc depicts Tanjiro's determination and growth as he faces formidable demons, showcasing the struggles and emotional challenges of the Demon Slayer Corps.</p>
+        </div>
+        <div class="section arc-section" id="section2" style="background-image: url('MTA.png');">
+            <h2>Mugen Train Arc</h2>
+            <p>Set on a train haunted by powerful demons, this arc follows Tanjiro and his friends as they confront their pasts and fight for the lives of innocent passengers.</p>
+        </div>
+        <div class="section arc-section" id="section3" style="background-image: url('EDA.png');">
+            <h2>Entertainment District Arc</h2>
+            <p>Tanjiro and his companions enter the Entertainment District to battle a powerful demon that preys on unsuspecting citizens, revealing dark secrets and hidden talents.</p>
+        </div>
+        <div class="section arc-section" id="section4" style="background-image: url('SVA.png');">
+            <h2>Swordsmith Village Arc</h2>
+            <p>In this arc, Tanjiro visits the Swordsmith Village to repair his sword, where he encounters new allies and faces formidable threats, deepening the lore of demon slayers.</p>
+        </div>
+        <div class="section arc-section" id="section5" style="background-image: url('HTA.png');">
+            <h2>Hashira Training Arc</h2>
+            <p>This arc showcases the rigorous training that Tanjiro undergoes alongside the Hashira, the elite demon slayers, preparing him for the ultimate battles ahead.</p>
+        </div>
+        <div class="section arc-section" id="section6" style="background-image: url('FBA.png');">
+            <h2>Final Battle Arc</h2>
+            <p>The climactic arc where all the characters unite to confront the main antagonist, leading to epic battles and dramatic resolutions that test their resolve and strength.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <span class="footer-background">&copy; Made by Dev</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="second-script.js"></script>
+</body>
+</html>

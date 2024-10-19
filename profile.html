@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlayerDex - Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
+            <h1>SlayerDex</h1>
+            <div class="navbar-profile-picture">
+                <img id="profile-pic" src="Profile.png" alt="Profile Picture" onclick="openProfilePictureModal()">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-info">
+                <img id="profile-logo" src="DS.png" alt="Logo" class="profile-logo">
+                <div>
+                    <h2 id="username">Username</h2>
+                    <p id="email">email@example.com</p>
+                    <button id="edit-button">Edit Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bio">
+            <h3>Bio</h3>
+            <p id="bio">Share something about yourself!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© SlayerDex</p>
+    </footer>
+
+    <div id="profile-picture-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProfilePictureModal()">&times;</span>
+            <img id="modal-profile-pic" src="Profile.png" alt="Profile Picture" class="modal-image">
+            <button id="change-pic-button" onclick="openImagePicker()">Change</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Society</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-btn" id="demon-slayer-btn">Demon Slayer</a>
+        </div>
+        
+        <div class="nav-center">
+            <button class="nav-btn" onclick="redirectToSection('characters')">Characters</button>
+            <button class="nav-btn" onclick="redirectToSection('arcs')">Arcs</button>
+            <button class="nav-btn" onclick="window.open('https://demonslayerfree.online', '_blank')">Manga</button>
+            <button class="nav-btn" onclick="window.open('https://demonslayer-anime.com', '_blank')">Anime</button>
+            <button class="nav-btn" onclick="window.open('https://demonslayer-merchandise.shop', '_blank')">Merchandise</button>
+        </div>              
+
+        <div class="nav-right">
+            <button class="join-btn" onclick="joinNow()">Join Now</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <section class="hero">
+        <h2 class="fade-in">Welcome to the Demon Slayer Society</h2>
+        <p class="fade-in">Become part of a brave world fighting against demons.</p>
+    </section>
+    <br>
+    <br>
+    <section class="cards-section">
+        <h2 class="fade-in-arc">Anime Arcs</h2>
+        <br>
+        <div class="cards-container">
+            <div class="card fade-in-card">
+                <h3>Unwavering Resolve Arc</h3>
+                <p>Follow Tanjiro's journey as he trains to become a demon slayer after his family is slaughtered by demons.</p>
+            </div>
+            <div class="card fade-in-card">
+                <h3>Mugen Train Arc</h3>
+                <p>Join Tanjiro and his friends on a mission aboard the mysterious Mugen Train to face Enmu, a powerful demon.</p>
+            </div>
+            <div class="card fade-in-card">
+                <h3>Entertainment District Arc</h3>
+                <p>Tanjiro, Zenitsu, and Inosuke team up with the Sound Hashira to take down powerful demons hiding in a flashy district.</p>
+            </div>
+            <div class="card fade-in-card">
+                <h3>Swordsmith Village Arc</h3>
+                <p>Tanjiro travels to the Swordsmith Village to repair his sword, where new challenges and demons await him.</p>
+            </div>
+            <div class="card fade-in-card">
+                <h3>Hashira Training Arc</h3>
+                <p>Tanjiro and his friends undergo rigorous training under the Hashira to prepare for the final battle against Muzan.</p>
+            </div>
+            <div class="card fade-in-card">
+                <h3>Final Battle Arc</h3>
+                <p>The ultimate confrontation between the Demon Slayer Corps and Muzan begins, determining the fate of humanity.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="subscription-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 style="margin-bottom: 20px;">Join the<br>Demon Slayer Society</h2>
+        <label for="email" style="margin-bottom: 5px;">Enter your email:</label>
+        <form id="subscription-form">
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <button type="submit" id="subscribe-btn">Continue</button>
+        </form>
+    </div>
+</div>
+
+<div id="thank-you-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeThankYouModal()">&times;</span>
+        <h2>Thank You!</h2>
+        <br>
+        <p style="margin-bottom: 10px;">Now you are part of the Demon Slayer Society!</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-text">
+        <span class="footer-background">&copy; Made by Dev</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
